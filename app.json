@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "maintenance2",
+    "slug": "maintenance2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "maintenance2"
+}
