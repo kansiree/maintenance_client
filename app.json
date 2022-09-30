@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "maintenance2",
-    "slug": "maintenance2",
+    "name": "maintenance",
+    "slug": "maintenance",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
