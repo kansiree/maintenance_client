@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap';
 import { BrowserRouter, Route,  Routes } from 'react-router-dom';
 import AddMaster from './component/AddMaster';
+import Report from './component/Report';
+
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
@@ -20,6 +22,8 @@ export default function Maintanance(){
                 <Route path="/"></Route>
                 <Route path="/add" element={<App></App>}></Route>
                 <Route path='/addMaster' element={<AddMaster></AddMaster>}></Route>
+                <Route path='/report' element={<Report></Report>}></Route>
+
             </Routes>
            </Container>
            

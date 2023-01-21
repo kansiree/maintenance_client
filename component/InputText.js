@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Add = (prop) => {
+const Add = (prop,ref) => {
     return(
         <div className="main-container">
-            <input type="text"
+            <input type="text" ref={ref}
                     className="search"
                     placeholder={prop.textPlaceHolder}
                     maxLength={prop.maxLength}
@@ -14,4 +14,4 @@ const Add = (prop) => {
     );
 }
 
-export default Add;
+export default forwardRef(Add)

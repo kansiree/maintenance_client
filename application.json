@@ -1,0 +1,5 @@
+{
+    "developMode" : "N",
+    "API_URL_LOCAL" :  "http://localhost:8081",
+    "API_URL" :  "https://evening-taiga-89210.herokuapp.com"
+}

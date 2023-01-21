@@ -9,6 +9,8 @@ export default function Header(){
                     <Nav className="me-auto">
                         <Nav.Link href="/add">Add Mantanance Detail</Nav.Link>
                         <Nav.Link href="/addMaster">Add Master</Nav.Link>
+                        <Nav.Link href="/report">Report</Nav.Link>
+
                     </Nav>
                 </Container>
             </Navbar>   

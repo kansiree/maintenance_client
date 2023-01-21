@@ -1,13 +1,15 @@
 import { Button, Container, FloatingLabel,Form } from "react-bootstrap";
 import { StyleSheet } from 'react-native';
 import React from "react";
+import ConfigApplication from '../application.json'
 
 export default function AddMaster() {
     
 const type = React.useRef();
 const detail = React.useRef();
 const btSave = React.useRef();
-
+const URL = (ConfigApplication.developMode=="Y")?ConfigApplication.API_URL_LOCAL:ConfigApplication.API_URL;
+console.log("URL: "+URL);
 const onClickSave = () => {
     let valueType = type.current.value
     let valueDetail = detail.current.value
@@ -20,8 +22,12 @@ const onClickSave = () => {
         alert('please select type.');
 
     }else{
-        fetch('http://localhost:8081/createMaster', {
+
+        fetch(URL+'/createMaster', {
             method: 'POST',
+            withCredentials: true,  
+            crossorigin: true,  
+            mode: 'no-cors',  
             body: JSON.stringify(data),
         })
         .then(alert('SAVE SUCCESS'))
