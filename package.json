@@ -32,5 +32,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
-  "private": true
+  "private": true,
+  "engines": {
+  "node": "12.13.0",
+  "npm": "6.12.0"
+  }
 }
