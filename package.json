@@ -6,7 +6,8 @@
     "start": "expo export:web",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "heroku-postbuild": "expo build:web"
   },
   "dependencies": {
     "@emotion/styled": "^11.10.5",
