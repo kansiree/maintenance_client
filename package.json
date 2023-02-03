@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo export:web",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "heroku-postbuild": "expo build:web"
+    "start": "npx expo start --web",
+    "android": "npx expo run:android",
+    "ios": "npx expo run:ios",
+    "web": "npx expo start --web",
+    "heroku-postbuild": "npx expo export:web"
   },
   "dependencies": {
     "@emotion/styled": "^11.10.5",
