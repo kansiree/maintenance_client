@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --hot --config webpack.dev.js",
     "android": "npx expo run:android",
     "ios": "npx expo run:ios",
-    "web": "npx expo start --web",
-    "heroku-postbuild": "npx expo start --web"
+    "web": "webpack --config webpack.prod.js",
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "@emotion/styled": "^11.10.5",
